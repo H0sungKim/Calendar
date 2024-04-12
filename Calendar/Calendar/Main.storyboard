@@ -17,50 +17,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCS-zR-lZs">
-                                <rect key="frame" x="0.0" y="59" width="393" height="64"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="40.333333333333343"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlA-6a-p0o">
+                                        <rect key="frame" x="0.0" y="3" width="113" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="2023년 11월"/>
+                                        <connections>
+                                            <action selector="onClickMonth:" destination="g86-sb-ufh" eventType="touchUpInside" id="wxi-Py-RXm"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAM-Kp-mGP">
-                                        <rect key="frame" x="342" y="15.000000000000004" width="51" height="34.333333333333343"/>
+                                        <rect key="frame" x="342" y="3" width="51" height="34.333333333333336"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system"/>
+                                        <connections>
+                                            <action selector="onClickSetting:" destination="g86-sb-ufh" eventType="touchUpInside" id="4Xx-4T-017"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qz-G0-Mma">
-                                        <rect key="frame" x="274.33333333333331" y="15.333333333333329" width="67.666666666666686" height="33.333333333333336"/>
+                                        <rect key="frame" x="274.33333333333331" y="3.3333333333333357" width="67.666666666666686" height="33.333333333333336"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Today" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                         </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbv-R0-QMd">
-                                        <rect key="frame" x="0.0" y="10.666666666666668" width="149.33333333333334" height="42.666666666666657"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="2023년 11월">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
-                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickToday:" destination="g86-sb-ufh" eventType="touchUpInside" id="EzA-VB-iCN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="iAM-Kp-mGP" firstAttribute="centerY" secondItem="bCS-zR-lZs" secondAttribute="centerY" id="3dn-6z-fG3"/>
-                                    <constraint firstItem="Xbv-R0-QMd" firstAttribute="leading" secondItem="bCS-zR-lZs" secondAttribute="leading" id="HTo-7X-yel"/>
+                                    <constraint firstItem="DlA-6a-p0o" firstAttribute="height" secondItem="bCS-zR-lZs" secondAttribute="height" multiplier="0.853659" id="JvV-tD-pos"/>
+                                    <constraint firstItem="DlA-6a-p0o" firstAttribute="centerY" secondItem="bCS-zR-lZs" secondAttribute="centerY" id="NEV-sV-xrW"/>
                                     <constraint firstAttribute="trailing" secondItem="iAM-Kp-mGP" secondAttribute="trailing" id="Nfw-BD-BuD"/>
+                                    <constraint firstItem="DlA-6a-p0o" firstAttribute="leading" secondItem="bCS-zR-lZs" secondAttribute="leading" id="TCz-l7-pX9"/>
                                     <constraint firstItem="1Qz-G0-Mma" firstAttribute="centerY" secondItem="bCS-zR-lZs" secondAttribute="centerY" id="e0X-cg-CcI"/>
-                                    <constraint firstAttribute="height" constant="64" id="gbo-CZ-Seb"/>
-                                    <constraint firstItem="Xbv-R0-QMd" firstAttribute="centerY" secondItem="bCS-zR-lZs" secondAttribute="centerY" id="hDe-kO-obH"/>
-                                    <constraint firstItem="iAM-Kp-mGP" firstAttribute="centerY" secondItem="bCS-zR-lZs" secondAttribute="centerY" id="hhp-hP-kld"/>
                                     <constraint firstItem="iAM-Kp-mGP" firstAttribute="leading" secondItem="1Qz-G0-Mma" secondAttribute="trailing" id="od9-nt-Yy0"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AOS-xD-JTf">
-                                <rect key="frame" x="0.0" y="122.99999999999999" width="393" height="20.333333333333329"/>
+                                <rect key="frame" x="0.0" y="99.333333333333329" width="393" height="20.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwT-h0-9jg">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yes-hD-wY9">
@@ -96,27 +102,27 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="토" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksu-x6-Icm">
                                         <rect key="frame" x="337" y="0.0" width="56" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="400" translatesAutoresizingMaskIntoConstraints="NO" id="fSb-pw-cGz" customClass="CalendarView" customModule="Calendar" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="143.33333333333337" width="393" height="400"/>
+                                <rect key="frame" x="0.0" y="119.66666666666669" width="393" height="400.00000000000006"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwl-Iy-bAi">
-                                <rect key="frame" x="16.000000000000004" y="562.33333333333337" width="34.333333333333343" height="21.666666666666629"/>
+                                <rect key="frame" x="16.000000000000004" y="538.66666666666663" width="34.333333333333343" height="21.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JZN-Yq-2dG">
-                                <rect key="frame" x="0.0" y="600" width="393" height="218"/>
+                                <rect key="frame" x="0.0" y="576.33333333333337" width="393" height="241.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5I-aX-9o3">
-                                <rect key="frame" x="0.0" y="543.33333333333337" width="393" height="3"/>
+                                <rect key="frame" x="0.0" y="519.66666666666663" width="393" height="3"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="NKn-2Z-onu"/>
@@ -147,7 +153,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnMonth" destination="DlA-6a-p0o" id="QOk-4h-WLA"/>
                         <outlet property="lbDay" destination="Uwl-Iy-bAi" id="f1V-6a-cGU"/>
+                        <outlet property="tbvEvent" destination="JZN-Yq-2dG" id="dOR-cD-mlS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFO-9Q-vsK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -163,8 +171,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

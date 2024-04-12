@@ -16,6 +16,9 @@
 		96336D452B86FF9F002CC02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96336D442B86FF9F002CC02B /* Main.storyboard */; };
 		96336D472B86FFAF002CC02B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96336D462B86FFAF002CC02B /* MainViewController.swift */; };
 		96C861892BC67988009DD138 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C861882BC67988009DD138 /* CalendarView.swift */; };
+		96C8618B2BC80665009DD138 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C8618A2BC80665009DD138 /* UIViewController+Ext.swift */; };
+		96C8618D2BC80709009DD138 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C8618C2BC80709009DD138 /* DatePickerViewController.swift */; };
+		96C8618F2BC80713009DD138 /* DatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C8618E2BC80713009DD138 /* DatePicker.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		96336D442B86FF9F002CC02B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		96336D462B86FFAF002CC02B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		96C861882BC67988009DD138 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		96C8618A2BC80665009DD138 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		96C8618C2BC80709009DD138 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		96C8618E2BC80713009DD138 /* DatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePicker.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				96336D442B86FF9F002CC02B /* Main.storyboard */,
 				96336D462B86FFAF002CC02B /* MainViewController.swift */,
 				96C861882BC67988009DD138 /* CalendarView.swift */,
+				96C8618A2BC80665009DD138 /* UIViewController+Ext.swift */,
+				96C8618C2BC80709009DD138 /* DatePickerViewController.swift */,
+				96C8618E2BC80713009DD138 /* DatePicker.storyboard */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C8618F2BC80713009DD138 /* DatePicker.storyboard in Resources */,
 				96336D452B86FF9F002CC02B /* Main.storyboard in Resources */,
 				96336D212B86FD93002CC02B /* LaunchScreen.storyboard in Resources */,
 				96336D1E2B86FD93002CC02B /* Assets.xcassets in Resources */,
@@ -259,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				96336D152B86FD91002CC02B /* AppDelegate.swift in Sources */,
+				96C8618D2BC80709009DD138 /* DatePickerViewController.swift in Sources */,
 				96336D472B86FFAF002CC02B /* MainViewController.swift in Sources */,
+				96C8618B2BC80665009DD138 /* UIViewController+Ext.swift in Sources */,
 				96C861892BC67988009DD138 /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
